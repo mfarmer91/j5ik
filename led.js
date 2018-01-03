@@ -9,6 +9,6 @@ var board = new five.Board({
 
 board.on("ready", () => {
   var led = new five.Led("a5");
-  led.blink(500);
+  led.pulse(1000);
 })
 //this executes when the board emits the "ready" event.  Gets executed "on" the board.
