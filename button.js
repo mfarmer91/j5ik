@@ -7,6 +7,6 @@ var board = new five.Board({
 
 board.on("ready", () => {
     var button = new five.Button("a2");
-    button.on("press", () => console.log("Button Pressed!"));
-    button.on("release", () => console.log("Button Released"));
+    button.on("press", () => console.log("Oops! Did I do that? :D "));
+    button.on("release", () => console.log("Yeas. Yeas I did."));
 });
