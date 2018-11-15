@@ -6,7 +6,8 @@ var board = new five.Board({
 });
 
 board.on("ready", () => {
+  var led = new five.Led("b5");
   var spdt = new five.Switch("a5");
-  spdt.on("close", () => console.log("Switch closed"));
-  spdt.on("open", () => console.log("Switch opened"));
+  spdt.on("close", () => led.on());
+  spdt.on("open", () => led.off());
 });
